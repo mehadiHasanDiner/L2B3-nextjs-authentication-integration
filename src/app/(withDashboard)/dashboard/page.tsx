@@ -16,7 +16,10 @@ const DashboardPage = async () => {
             Logged-in User email: {session?.user?.email}
           </h1>
           <Image
-            src={session?.user?.image}
+            src={
+              session?.user?.image ||
+              "https://cdn-icons-png.flaticon.com/512/6681/6681204.png"
+            }
             width={100}
             height={100}
             alt="user image"
